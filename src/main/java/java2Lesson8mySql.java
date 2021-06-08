@@ -13,8 +13,8 @@ public class java2Lesson8mySql {
         //statement.executeUpdate("INSERT INTO students.lesson8 (name, sirname) VALUES ('Homer', 'Simpson');");
         ResultSet rs = statement.executeQuery("SELECT * FROM students.lesson8");
         while (rs.next()) {
-            System.out.println(rs.getString("name"));//.getString("TABLE_NAME"));
-            System.out.println(rs.getString("sirname"));
+            System.out.print(rs.getString("name"));//.getString("TABLE_NAME"));
+            System.out.print(rs.getString("sirname"));
 
         }
         //jdbc:mysql://localhost:3306/mysql
